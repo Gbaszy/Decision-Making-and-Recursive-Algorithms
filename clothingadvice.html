@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Clothing Adviser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            background: rgb(134, 99, 86);
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Weather Clothing Adviser</h1>
+    <form id="weatherForm">
+        <label for="temperatureInput">Enter the current temperature (°C):</label>
+        <input type="number" id="temperatureInput" name="temperature" required>
+        <br><br>
+        <label for="rainingInput">Is it raining?</label>
+        <select id="rainingInput" name="raining" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="adviseClothing()">Get Clothing Advice</button>
+    </form>
+    <div class="result" id="result"></div>
+</div>
+
+<script src="clothingadvice.js"></script>
+
+</body>
+</html>
